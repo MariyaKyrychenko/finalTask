@@ -8,11 +8,11 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Page</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Page mobile version</title>
+    <link rel="stylesheet" type="text/css" href="mobstyle.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top ">
       <a class="navbar-brand" href="#">
         <img src="img/37ecdb67e44c74d531cefdac9b4ecd8f.jpg" width="40" height="50" class="rounded">
         Моя страничка
@@ -44,7 +44,7 @@
     </nav>
     <br>
     <center>
-      <div class="card" style="width: 20rem;">
+      <div class="card container-md" style="width: 20rem;">
         <img src="img/37ecdb67e44c74d531cefdac9b4ecd8f.jpg" class="card-img-top rounded img-fluid">
         <div class="card-body">
           <h3 class="card-title font-weight-bold">Чаос, амигос!</h3>
@@ -75,7 +75,7 @@
 
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane fade show active" id="about">
-        <form>
+        <form class="container-md">
           <br>
           <div class="form-group row">
             <label class="col-sm-2 col-form-label border border-warning text-right rounded font-weight-bold">Меня зовут</label>
@@ -96,7 +96,7 @@
         </form>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="omg">
-        <table class="table table-bordered table-hover table-sm">
+        <table class="table table-bordered table-hover table-md">
           <thead>
             <br>
             <tr class="table-info">
@@ -150,7 +150,7 @@
         </table>
       </div>
       <div role="tabpanel" class="tab-pane fade " id="top">
-        <table class="table table-bordered table-hover">
+        <table class="table table-bordered table-hover table-md">
           <thead>
             <br>
             <tr class="table-warning">
@@ -220,39 +220,26 @@
 
     
     <br>
-    <div class="d-flex flex-column bd-highlight mb-3 align-self-center" >
-      <div class="p-2 bd-highlight">
-        <div class="radius justify-content-sm-start">
-          <div class="media">
-            <img src="img/экоцции/Истинная_радость.png" class="rounded-circle align-self-start mr-3 img-fluid">
-            <div class="media-body">
-              <h2 class="mt-0 font-weight-bold">Счастье - это ...</h2>  <br>
-              <p>... мягкая кроватка, куча вкусняшек, шелест страниц и звуки музыки <nobr>ヾ(=`ω´=)ノ”</nobr></p>
-            </div>
-          </div>
-        </div>
-      </div>  
-      <div class="p-2 bd-highlight">
-        <div class="radius justify-content-sm-lg-start">
-          <div class="media">
-            <div class="media-body" id="middle">
-              <h2 class="mt-0 mb-1 font-weight-bold">Грусть - это ...</h2>      <br>       
-              <p>... когда в фильме/сериале/книге/дораме петялька <nobr>(ಥ﹏ಥ)</nobr></p>
-            </div>
-            <img src="img/экоцции/Истинная_грусть.png" class="rounded-circle ml-3 img-fluid">
-          </div>
-        </div>
+    <div class="card radius" id="radius">
+      <div class="card-body " id="radius">
+        <h2 class="card-text text-center font-weight-bold">Счастье - это ...</h2>
+      <p class="card-text"><img src="img/экоцции/Истинная_радость.png" class="rounded-circle" width="150" height="150">      
+       &nbsp;... мягкая кроватка, куча вкусняшек, шелест страниц и звуки музыки <nobr>ヾ(=`ω´=)ノ”</nobr></p>
       </div>
-      <div class="p-2 bd-highlight">
-        <div class="radius justify-content-sm-start">
-          <div class="media">
-            <img src="img/экоцции/Истинное_сейчас.png" class="rounded-circle align-self-start mr-3 img-fluid">
-            <div class="media-body">
-              <h2 class="mt-0 font-weight-bold">Сейчас - это ...</h2>     <br>
-              <p>... ну что сказать ... карантин ... когда не выходишь из дома уже 2 месяца <nobr>ヽ(*・ω・)ﾉ</nobr></p>
-            </div>
-          </div>
-        </div>
+    </div>
+    <br>
+    <div class="card radius" id="radius">
+      <div class="card-body " id="radius">
+        <h2 class="card-text text-center font-weight-bold">Грусть - это ...</h2>
+      <p class="card-text"><img src="img/экоцции/Истинная_грусть.png" class="rounded-circle align-right" width="150" height="150">&nbsp;... когда в фильме/сериале/книге/дораме петялька <nobr>(ಥ﹏ಥ)</nobr></p>
+      </div>
+    </div>
+    <br>
+    <div class="card radius" id="radius">
+      <div class="card-body" id="radius">
+        <h2 class="card-text text-center font-weight-bold">Сейчас - это ...</h2>
+      <p class="card-text"><img src="img/экоцции/Истинное_сейчас.png" class="rounded-circle" width="150" height="150">      
+        &nbsp;... ну что сказать ... карантин ... когда не выходишь из дома уже 2 месяца <nobr>ヽ(*・ω・)ﾉ</nobr></p>
       </div>
     </div>
 
@@ -446,4 +433,4 @@
         });
     </script>
   </body>
-</html>
+</html> 

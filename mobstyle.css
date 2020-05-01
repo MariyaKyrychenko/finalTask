@@ -1,0 +1,109 @@
+		:root{
+          --panel-bg:;
+          --text-h5:#B38F8B;
+          --carousel-bg: #FFE4E1;
+          --nav-item-bg:#E0FFEF;
+          --td-a-color:#B38F8B;
+          --nav-bg:#FFE3E0;          
+          --radius-color: #FFFAFA;
+          --card:#E6E6E6;
+          --home-color:#FFFFFF;
+          --card-bg:;
+        }
+        :root[theme='dark'] {
+          --panel-bg: #14CCB0;
+          --text-h5: #800000;
+          --carousel-bg:#FF9F94;
+          --nav-item-bg:#79B395;
+          --td-a-color:#800000;
+          --nav-bg:#FF9F94;
+          --radius-color: #FF9F94;
+          --card: #CCCCCC;
+          --home-color:#14CCB0;
+          --card-bg: #FFE4E1;
+        }
+@font-face {
+        font-family: IsadoraC;
+        src: url('19071.ttf');
+      }
+body {
+        background: var(--panel-bg);
+        font-family:IsadoraC; 
+        font-size: 26px;
+      }
+nav {
+	background: var(--nav-bg);
+}
+.navbar-brand{
+	font-size:26px;
+}
+#area {          
+	background: var(--home-color);
+}
+.carousel-control-next-icon , .carousel-control-prev-icon {
+	height: 25px;
+	width:  25px;
+}
+.carousel-caption {
+	color:black;
+	text-align: right;
+}
+.carousel_slide , .carousel-inner , .carousel-item {
+	background: var(--carousel-bg);
+}
+.nav-item:hover {
+	background: var(--nav-item-bg);
+}
+table {
+	text-align: center;
+}
+a:link {
+	text-decoration: none;
+}
+a:active {
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: none;
+}
+td a:hover {
+	cursor: url('img/icons8-фентези-64.png'),pointer;
+	color: var(--td-a-color);
+	text-decoration: underline;
+}
+.card-header , #footer {
+	background: var(--card);
+}
+h5, h3 {
+	color: var(--text-h5) ;
+}
+.carousel-caption h1 {
+	text-shadow: white 1px 1px 0, red -1px -1px 0, 
+                 white -1px 1px 0, red 1px -1px 0;
+    font-size:28px;
+}
+.carousel-caption p {
+	color: white;
+	text-shadow: red 0 0 2px;
+	font-weight: bold;
+	font-size:20px;
+}
+.list-unstyled {
+	padding-left: 10px;
+}
+#radius {
+	margin-left: 10px;
+	margin-right: 10px;
+	background: var(--radius-color);
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+#middle {
+	padding-left: 50px;
+	text-align: right;
+}
+.card-body {
+	background: var(--card-bg);
+}
